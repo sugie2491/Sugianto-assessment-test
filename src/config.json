@@ -1,0 +1,8 @@
+{
+    "API_MAIN_URL": "http://localhost:8080/",
+    "AXIOS_CONFIG": {
+        "headers": {
+            "Content-Type": "application/json"
+        }
+    }
+}

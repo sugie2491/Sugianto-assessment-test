@@ -1,0 +1,142 @@
+@import "~bootstrap/scss/bootstrap";
+@import "../Fonts/stylesheet.css";
+
+// FONT FAMILY
+$fontBold: 'Poppins Bold';
+$fontMedium: 'Poppins Semi Bold';
+$fontBlack: 'Poppins Black';
+$fontLight: 'Poppins Light';
+$fontRegular: 'Poppins Regular';
+
+// COLOR PALLETE
+$colorBlack: #1a1a1a;
+$colorGreen: #75e382;
+$colorMain: #27273e;
+$colorRed: #db5353;
+$colorSecondary: #8afdb8;
+$colorWhite: #ffffff;
+
+
+
+
+// MAIN CSS
+button {
+    background-color: $colorBlack;
+    border: 1px solid rgba($color: #000000, $alpha: .4);
+    border-radius: 5px;
+    color: $colorWhite;
+    margin-right: 7.5px;
+    padding: 7.5px 15px;
+}
+
+input, select {
+    width: 100%;
+}
+
+section {
+    padding: 15px;
+}
+
+table, tr, td {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+.label {
+    font-size: .8rem;
+    margin-bottom: 3.75px;
+}
+
+.title {
+    font-family: $fontMedium;
+    font-size: 1.25rem;
+}
+// END MAIN CSS
+
+
+
+
+// LOGIN
+section.login-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+    width: 100%;
+
+    .login-box {
+        border: 1px solid rgba($color: #000000, $alpha: .4);
+        border-radius: 5px;
+        max-width: 100%;
+        padding: 15px;
+        position: relative;
+        width: 360px;
+
+        .error {
+            text-align: center;
+            color: $colorRed;
+            font-size: .8rem;
+        }
+
+        .loading {
+            align-items: center;
+            background-color: rgba($color: #000000, $alpha: .7);
+            color: $colorWhite;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .login-input-group {
+            padding: 7.5px 0;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .title {
+            font-family: $fontMedium;
+            text-align: center;
+        }
+    }
+}
+// END LOGIN
+
+
+
+
+// NAVIGATION
+nav {
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .4);
+    padding: 7.5px 15px;
+
+    .logo {
+        font-family: $fontBold;
+        font-size: 1.5rem;
+    }
+}
+// END NAVIGATION
+
+
+
+
+// UTILITIES
+.mt-15 {
+    margin-top: 15px;
+}
+
+.text-right {
+    text-align: right;
+}
+// END UTILITIES
